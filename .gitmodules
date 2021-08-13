@@ -13,3 +13,6 @@
 [submodule "zsh_plugins/autojump"]
 	path = zsh_plugins/autojump
 	url = https://github.com/wting/autojump.git
+[submodule "zsh_plugins/alias-tips"]
+	path = zsh_plugins/alias-tips
+	url = https://github.com/djui/alias-tips

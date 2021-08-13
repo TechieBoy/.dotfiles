@@ -18,13 +18,18 @@ set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set number                              " Line numbers
+set relativenumber                      " Relative line numbers
 set background=dark                     " tell vim what the background color looks like
-set showtabline=2                       " Always show tabs 
+set showtabline=1                       " Always show tabs
 set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.
 set updatetime=300                      " Faster completion
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set mmp=20000                           " Increase max memory used while matching regexes
-set incsearch
+set incsearch                           " Incremental search
+set nohlsearch                          " No highlights after search
+set smartcase                           " Search smart
+set ignorecase                          " Ignore case while searching
+set scrolloff=8                         " Start scrolling when you reach 8 lines away
 
 " Save on focus lost
 autocmd BufLeave,FocusLost * silent! wall
