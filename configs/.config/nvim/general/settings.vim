@@ -31,9 +31,12 @@ set smartcase                           " Search smart
 set ignorecase                          " Ignore case while searching
 set scrolloff=8                         " Start scrolling when you reach 8 lines away
 
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Save on focus lost
 autocmd BufLeave,FocusLost * silent! wall
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" Disable tmux status bar when inside vim
+autocmd VimEnter,FocusGained * silent !tmux set status off
+autocmd VimLeave,FocusLost * silent !tmux set status on
 
 " When editing read only files use w!! and it will ask for sudo
 cmap w!! w !sudo tee %

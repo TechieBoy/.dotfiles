@@ -30,4 +30,4 @@ for folder in configs zsh; do
     stow -v $folder
 done
 
-echo "All done! Install alacritty,fzf, rg and language servers using system repos"
+echo "All done! Install alacritty,fzf, source code pro font, rg and language servers using system repos"

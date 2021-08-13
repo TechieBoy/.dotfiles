@@ -1,5 +1,5 @@
 # Aliases
-alias ls='ls -F --color=auto'
+alias ls='ls -aF --color=auto'
 alias vim=nvim
 
 # Zsh settings
