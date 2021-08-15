@@ -25,3 +25,4 @@ source_file "aliases.zsh"
 
 # Path settings
 export PATH=~/.npm-global/bin:$PATH
+export EDITOR=/usr/bin/nvim

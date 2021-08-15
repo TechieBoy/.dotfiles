@@ -10,11 +10,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Cool Icons (need nerd fonts)
     Plug 'ryanoasis/vim-devicons'
 
-    " Set buffers as tabs
-    "Plug 'ap/vim-buftabline'
-
-    " Themes
+    " Theme
     Plug 'NLKNguyen/papercolor-theme'
+
+    " Comment stuff with gc
+    Plug 'tpope/vim-commentary'
 
     " Status Line
     Plug 'hoob3rt/lualine.nvim'

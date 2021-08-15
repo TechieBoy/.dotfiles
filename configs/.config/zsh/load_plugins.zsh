@@ -19,7 +19,7 @@ zadd_plugin "zsh-users/zsh-history-substring-search"
 bindkey -M main '^[OA' history-substring-search-up
 bindkey -M main '^[OB' history-substring-search-down
 bindkey -M main '^[[A' history-substring-search-up
-bindkey -M main '^[[B' history-substring-search-up
+bindkey -M main '^[[B' history-substring-search-down
 
 # Autojump
 zadd_plugin "wting/autojump" "cd $ZSHDIR/plugins/autojump && ./install.py" "cd $ZSHDIR/plugins/autojump && ./uninstall.py"

@@ -13,10 +13,8 @@ npm install -g neovim && npm update -g neovim
 pip3 install --user --upgrade pynvim
 
 cd ~/.dotfiles
-for folder in configs zsh tmux; do
-    stow -v $folder
-done
+stow -v configs
 
-needed_progs=(alacritty fzf source-code-pro-font rg bat language-servers)
-echo "All done! Install the following manually and you are done!"
-printf '%s\n' "${needed_progs[@]}"
+for prog in alacritty xsel fzf rg bat ranger source-code-pro-font language-servers; do
+    hash $prog 2>/dev/null || { echo >&2 "Did not find $prog, please install it."; }
+done

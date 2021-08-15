@@ -32,14 +32,13 @@ function zadd_standalone() {
     fi
 }
 # Deletes all plugins
-# Use this functino to "Update" all plugins, by deleting all of them and restarting terminal
+# Use this function to "Update" all plugins, by deleting all of them and restarting terminal
 # This is a good metric to judge whether zsh is too bloated
 # If this is taking too long, it's time to remove some plugins
 function zclear() {
     echo "Deleting all installed plugins..."
-    [ -f $ZSHDIR/uninstall.sh ] && chmod +x $ZSHDIR/uninstall.sh && $ZSHDIR/uninstall.sh
+    [ -f $ZSHDIR/uninstall.sh ] && chmod +x $ZSHDIR/uninstall.sh && $ZSHDIR/uninstall.sh && rm -rf $ZSHDIR/uninstall.sh
     rm -rf $ZSHDIR/plugins
     rm -rf $ZSHDIR/standalone
-    rm -rf $ZSHDIR/uninstall.sh
 }
 
