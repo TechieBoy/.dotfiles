@@ -1,10 +1,8 @@
-# Aliases
-alias ls='ls -aF --color=auto'
-alias vim=nvim
-
+export ZSHDIR=~/.config/zsh
+source $ZSHDIR/plugin_manager.zsh
 # Zsh settings
 setopt AUTO_CD
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+unsetopt BEEP
 
 # History
 HISTFILE=~/.zhistory
@@ -19,17 +17,11 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt HIST_REDUCE_BLANKS
 
-# Keybindings for substring search plugin. Maps up and down arrows.
-bindkey -M main '^[OA' history-substring-search-up
-bindkey -M main '^[OB' history-substring-search-down
-bindkey -M main '^[[A' history-substring-search-up
-bindkey -M main '^[[B' history-substring-search-up
-
-# Keybindings for autosuggestions plugin
-bindkey '^ ' autosuggest-accept
-bindkey '^f' autosuggest-accept
-
 # Plugin settings
-source ~/.dotfiles/zsh/load_plugins.zsh
+source_file "load_plugins.zsh"
+
+# Aliases
+source_file "aliases.zsh"
+
 # Path settings
 export PATH=~/.npm-global/bin:$PATH

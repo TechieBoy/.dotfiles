@@ -1,2 +1,4 @@
-zsh_plugins/*.zsh
 .netrwhist
+configs/.config/zsh/plugins
+configs/.config/zsh/standalone
+configs/.config/zsh/uninstall.sh

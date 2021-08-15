@@ -11,7 +11,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ryanoasis/vim-devicons'
 
     " Set buffers as tabs
-    Plug 'ap/vim-buftabline'
+    "Plug 'ap/vim-buftabline'
 
     " Themes
     Plug 'NLKNguyen/papercolor-theme'

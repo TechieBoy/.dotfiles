@@ -31,12 +31,17 @@ set smartcase                           " Search smart
 set ignorecase                          " Ignore case while searching
 set scrolloff=8                         " Start scrolling when you reach 8 lines away
 
+let g:netrw_liststyle = 3               " Tree style for file browsing
+let g:netrw_banner = 0                  " Don't show banner for file browser
+let g:netrw_browse_split = 4            " Open files in prev buffer
+let g:netrw_winsize = 20                " Use 20% of the window
+
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Save on focus lost
 autocmd BufLeave,FocusLost * silent! wall
 " Disable tmux status bar when inside vim
-autocmd VimEnter,FocusGained * silent !tmux set status off
-autocmd VimLeave,FocusLost * silent !tmux set status on
+" autocmd VimEnter,FocusGained * silent !tmux set status off
+" autocmd VimLeave,FocusLost * silent !tmux set status on
 
 " When editing read only files use w!! and it will ask for sudo
 cmap w!! w !sudo tee %
