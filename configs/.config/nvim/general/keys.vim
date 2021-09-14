@@ -20,4 +20,6 @@ nnoremap <silent> <C-j> :wincmd j<CR>
 nnoremap <silent> <C-k> :wincmd k<CR>
 nnoremap <silent> <C-l> :wincmd l<CR>
 
-
+" Make gf open file under cursor in new tab by default
+nnoremap gf <C-W>gf
+vnoremap gf <C-W>gf

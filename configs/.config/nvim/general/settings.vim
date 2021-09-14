@@ -1,8 +1,8 @@
+set awa                                 " Enable autosave
+set hidden                              " Required to keep multiple buffers open
+set nowrap                              " Display long lines as just one line
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set formatoptions-=cro                  " Stop newline continution of comments
-set awa
-set hidden                              " Required to keep multiple buffers open multiple buffers
-set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed 
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
@@ -15,8 +15,8 @@ set tabstop=4                           " Insert 4 spaces for a tab
 set shiftwidth=4                        " Change the number of space characters inserted for indentation
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
-set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
+set smartindent                         " Makes indenting smart
 set number                              " Line numbers
 set relativenumber                      " Relative line numbers
 set background=dark                     " tell vim what the background color looks like

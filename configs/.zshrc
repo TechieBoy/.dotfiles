@@ -26,3 +26,6 @@ source_file "aliases.zsh"
 # Path settings
 export PATH=~/.npm-global/bin:$PATH
 export EDITOR=/usr/bin/nvim
+
+# Extras (put machine specific config here, (eg: conda))
+[ -f ~/.zsh_extras.zsh ] && source ~/.zsh_extras.zsh

@@ -5,7 +5,7 @@ done
 
 # Make npm global behave first
 # https://npm.github.io/installation-setup-docs/installing/a-note-on-permissions.html
-mkdir ~/.npm-global
+mkdir -p ~/.npm-global
 npm config set prefix '~/.npm-global'
 
 echo "Installing neovim configs"
