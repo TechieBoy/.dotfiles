@@ -57,7 +57,8 @@ colors:
 
 # Background opacity
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.90
+window: 
+  opacity: 0.90
 
 shell:
   program: zsh
