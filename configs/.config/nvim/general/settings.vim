@@ -2,6 +2,7 @@ set awa                                 " Enable autosave
 set hidden                              " Required to keep multiple buffers open
 set nowrap                              " Display long lines as just one line
 set iskeyword+=-                      	" treat dash separated words as a word text object"
+set textwidth=120                       " 120 character width
 set formatoptions-=cro                  " Stop newline continution of comments
 set encoding=utf-8                      " The encoding displayed 
 set pumheight=10                        " Makes popup menu smaller

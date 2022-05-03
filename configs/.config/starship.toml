@@ -16,3 +16,6 @@ threshold = 80
 symbol = "💾"
 style = "bold dimmed red"
 format = "Ram: [${ram_pct}]($style)"
+
+[gcloud]
+disabled = true

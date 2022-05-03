@@ -1,5 +1,6 @@
-" General Settings
 source ~/.config/nvim/general/settings.vim
+if !exists('g:vscode')
+" General Settings
 source ~/.config/nvim/general/plugins.vim
 source ~/.config/nvim/general/keys.vim
 source ~/.config/nvim/general/color_font.vim
@@ -11,3 +12,4 @@ source ~/.config/nvim/plug-config/treesitter.lua
 source ~/.config/nvim/plug-config/indent-blankline.vim
 source ~/.config/nvim/plug-config/lsp.vim
 source ~/.config/nvim/plug-config/compe.lua
+endif
