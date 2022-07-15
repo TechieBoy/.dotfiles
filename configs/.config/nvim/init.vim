@@ -7,9 +7,9 @@ source ~/.config/nvim/general/color_font.vim
 
 " Plugin specific settings
 source ~/.config/nvim/plug-config/fzf.vim
+source ~/.config/nvim/plug-config/black.vim
 source ~/.config/nvim/plug-config/lualine.lua
 source ~/.config/nvim/plug-config/treesitter.lua
 source ~/.config/nvim/plug-config/indent-blankline.vim
-source ~/.config/nvim/plug-config/lsp.vim
-source ~/.config/nvim/plug-config/compe.lua
+source ~/.config/nvim/plug-config/lsp.lua
 endif

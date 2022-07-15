@@ -6,9 +6,6 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
-    " Add syntax highlighting for most languages
-    Plug 'sheerun/vim-polyglot'
-
     " Cool Icons (need nerd fonts)
     Plug 'ryanoasis/vim-devicons'
 
@@ -33,10 +30,25 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Indentation guides
     Plug 'lukas-reineke/indent-blankline.nvim'   
 
+    " Snippets
+    Plug 'L3MON4D3/LuaSnip'
+
+
     " Language Server
     Plug 'neovim/nvim-lspconfig'
+
+    " Python black
+    Plug 'psf/black', {'for': 'python', 'do': ':BlackUpgrade' }
+
+
     " Autocompletion
-    Plug 'hrsh7th/nvim-compe'
+    Plug 'hrsh7th/nvim-cmp'
+    Plug 'hrsh7th/cmp-nvim-lsp'
+    Plug 'hrsh7th/cmp-buffer'
+    Plug 'hrsh7th/cmp-path'
+    Plug 'saadparwaiz1/cmp_luasnip'
+
+
 
 call plug#end()
 

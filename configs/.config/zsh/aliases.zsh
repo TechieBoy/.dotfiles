@@ -9,6 +9,10 @@ alias ll='ls -Alh --color=auto'
 alias vim=nvim
 alias c=clear
 alias t=tmux
+alias htop=btop
+alias gcloud=/opt/google-cloud-sdk/bin/gcloud
+alias weather='curl wttr.in'
+alias crypto="curl 'rate.sx/?qF&n=15'"
 
 # Open file, asks for sudo if different owner
 function o() {
