@@ -7,7 +7,10 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
     " Cool Icons (need nerd fonts)
-    Plug 'ryanoasis/vim-devicons'
+    Plug 'kyazdani42/nvim-web-devicons'
+
+    " Acutal good indenting and language support 
+    Plug 'sheerun/vim-polyglot'
 
     " Theme
     Plug 'NLKNguyen/papercolor-theme'

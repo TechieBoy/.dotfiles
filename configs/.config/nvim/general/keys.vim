@@ -7,6 +7,8 @@ vnoremap > >gv
 " Buffer navigation using Tab and S-Tab
 nnoremap <silent> <Tab> :tabn<CR>
 nnoremap <silent> <S-Tab> :tabp<CR>
+" Close all other open buffers using Leader bo
+nnoremap <leader>bo :<C-u>up <bar> %bd <bar> e#<CR>
 " Save and quit current buffer using Q
 nnoremap Q :w\|bd<cr>
 
