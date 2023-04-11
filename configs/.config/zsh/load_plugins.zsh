@@ -4,6 +4,12 @@ zadd_plugin "djui/alias-tips"
 zadd_plugin "zpm-zsh/autoenv"
 zadd_standalone "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh"
 
+# Remember last working directory
+# This plugin needs ZSH_CACHE_DIR to be set
+[ -d ~/.cache/zsh ] || mkdir ~/.cache/zsh
+export ZSH_CACHE_DIR=~/.cache/zsh
+zadd_standalone "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/last-working-dir/last-working-dir.plugin.zsh"
+
 # Completions
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 zadd_plugin "zsh-users/zsh-completions"
@@ -37,5 +43,5 @@ export FZF_ALT_C_COMMAND='rg --files --hidden --null -g "!.git/*" -g "!.cache/*"
 zadd_plugin "zsh-users/zsh-syntax-highlighting"
 
 # Starship prompt
-hash starship 2>/dev/null || { echo >&2 "Starship not found, installing."; sh -c "$(curl -fsSL https://starship.rs/install.sh)"; }
+hash starship 2>/dev/null || { echo >&2 "Starship (https://starship.rs) not found, please install it." }
 eval "$(starship init zsh)"

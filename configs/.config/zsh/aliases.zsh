@@ -8,11 +8,17 @@ alias ls='ls -AF --color=auto'
 alias ll='ls -Alh --color=auto'
 alias vim=nvim
 alias c=clear
-alias t=tmux
 alias htop=btop
 alias gcloud=/opt/google-cloud-sdk/bin/gcloud
 alias weather='curl wttr.in'
 alias crypto="curl 'rate.sx/?qF&n=15'"
+
+# Tmux aliases
+alias t=tmux
+alias ta='tmux attach -t'
+alias tn='tmux new -A -s'
+# tf to create a new session with current folder name. (attach if already exists)
+alias tf="tmux new -A -s $(pwd | sed 's/.*\///g')"
 
 # Open file, asks for sudo if different owner
 function o() {
