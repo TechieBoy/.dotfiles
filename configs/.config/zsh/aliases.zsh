@@ -18,7 +18,9 @@ alias t=tmux
 alias ta='tmux attach -t'
 alias tn='tmux new -A -s'
 # tf to create a new session with current folder name. (attach if already exists)
-alias tf="tmux new -A -s $(pwd | sed 's/.*\///g')"
+function tf() {
+    tmux new -A -s ${PWD##*/}
+}
 
 # Open file, asks for sudo if different owner
 function o() {
