@@ -2,6 +2,7 @@
 if type bat > /dev/null; then
     alias cat='bat -P --theme "Monokai Extended Origin" --style=plain'
     export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+    export MANROFFOPT="-c"
 fi
 
 alias ls='ls -AF --color=auto'
@@ -11,7 +12,9 @@ alias c=clear
 alias htop=btop
 alias gcloud=/opt/google-cloud-sdk/bin/gcloud
 alias weather='curl wttr.in'
-alias crypto="curl 'rate.sx/?qF&n=15'"
+alias crypto="curl rate.sx/?qF&n=15"
+alias dcu='docker compose up -d'
+alias dcd='docker compose down'
 
 # Tmux aliases
 alias t=tmux

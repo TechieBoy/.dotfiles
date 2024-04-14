@@ -26,5 +26,5 @@ source_file "aliases.zsh"
 
 export EDITOR=/usr/bin/nvim
 
-# Extras (put machine specific config here, (eg: conda))
-[ -f ~/.zsh_extras.zsh ] && source ~/.zsh_extras.zsh
+# Don't clutter this file.
+# Add machine specific config to ~/.zshenv (always sourced by zsh)
