@@ -1,4 +1,5 @@
 .netrwhist
+configs/.config/nvim/lazy-lock.json
 configs/.config/zsh/plugins
 configs/.config/zsh/standalone
 configs/.config/zsh/uninstall.sh
