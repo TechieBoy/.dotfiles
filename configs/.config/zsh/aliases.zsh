@@ -12,7 +12,7 @@ alias c=clear
 alias htop=btop
 alias gcloud=/opt/google-cloud-sdk/bin/gcloud
 alias weather='curl wttr.in'
-alias crypto="curl rate.sx/?qF&n=15"
+alias crypto="curl 'rate.sx/?qF&n=10'"
 alias dcu='docker compose up -d'
 alias dcd='docker compose down'
 
