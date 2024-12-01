@@ -5,8 +5,13 @@ if type bat > /dev/null; then
     export MANROFFOPT="-c"
 fi
 
-alias ls='ls -AF --color=auto'
-alias ll='ls -Alh --color=auto'
+if type eza > /dev/null; then
+    alias ls='eza --oneline --icons -a'
+    alias ll='eza --icons --long --git -a'
+else
+    alias ls='ls -AF --color=auto'
+    alias ll='ls -Alh --color=auto'
+fi
 alias vim=nvim
 alias c=clear
 alias htop=btop
